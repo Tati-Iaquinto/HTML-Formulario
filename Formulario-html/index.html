@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Curso HTML5 Essencial</title>
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+
+        <style>
+         input {
+	        display:block;
+          margin-bottom:20px;
+          border:1px solid #999;
+          padding:8px;
+          border-radius:3px;
+          }
+        </style> 
+    </head>
+
+    <body>
+        
+        <h2>Formulário</h2>
+      
+        <form action="formulario.html" method="post">
+
+        <label for="nome">Nome completo</label>
+        <input type="text" name="nome" id="nome" maxlength="100" required placeholder="Insira seu nome" autofocus>
+
+       <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" maxlength="100" placeholder="Insira seu telefone">
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" maxlength="100" placeholder="Insira seu email">
+
+        <label for="filhos">Filhos</label>
+        <input type="number" name="filhos" id="filhos" min="1" max="5" value="1">
+        
+        <label for="aniversario">Aniversário</label>
+        <input type="date" name="aniversario" id="aniversario">
+
+        <label for="nome_lojas">Lojas</label>
+        <input type="text" name="nome_lojas" id="nome_lojas" list="lojas">
+
+        <datalist id="lojas">
+          <option value="Centauro">Centauro</option>
+          <option value="Centro de beleza">Centro de beleza</option>
+          <option value="Magazine Luiza">Magazine Luiza</option>
+          <option value="McDonald's">McDonald's</option>
+        </datalist>
+
+        
+        <label for="cor">Cor</label>
+        <input type="color" name="cor" id="cor">
+
+        <label for="pesquisa">Pesquise aqui</label>
+        <input type="search" name="pesquisa" id="pesquisa">
+        
+        <input type="submit" value="Enviar" id="enviar" name="enviar">
+       
+        </form>
+
+      
+    </body>
+</html>
